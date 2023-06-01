@@ -1,81 +1,85 @@
+# node modules
+node_modules
+
 # SERVER
 # compiled output
-01-server-sockets/dist
-01-server-sockets/node_modules
+apps/01-server-sockets/dist
+apps/01-server-sockets/node_modules
 
 # Logs
-01-server-sockets/logs
-01-server-sockets/*.log
-01-server-sockets/npm-debug.log*
-01-server-sockets/pnpm-debug.log*
-01-server-sockets/yarn-debug.log*
-01-server-sockets/yarn-error.log*
-01-server-sockets/lerna-debug.log*
+apps/01-server-sockets/logs
+apps/01-server-sockets/*.log
+apps/01-server-sockets/npm-debug.log*
+apps/01-server-sockets/pnpm-debug.log*
+apps/01-server-sockets/yarn-debug.log*
+apps/01-server-sockets/yarn-error.log*
+apps/01-server-sockets/lerna-debug.log*
 
 # OS
-01-server-sockets/.DS_Store
+apps/01-server-sockets/.DS_Store
 
 # Tests
-01-server-sockets/coverage
-01-server-sockets/.nyc_output
+apps/01-server-sockets/coverage
+apps/01-server-sockets/.nyc_output
 
 # IDEs and editors
-01-server-sockets//.idea
-01-server-sockets/.project
-01-server-sockets/.classpath
-01-server-sockets/.c9/
-01-server-sockets/*.launch
-01-server-sockets/.settings/
-01-server-sockets/*.sublime-workspace
+apps/01-server-sockets//.idea
+apps/01-server-sockets/.project
+apps/01-server-sockets/.classpath
+apps/01-server-sockets/.c9/
+apps/01-server-sockets/*.launch
+apps/01-server-sockets/.settings/
+apps/01-server-sockets/*.sublime-workspace
 
 # IDE - VSCode
-01-server-sockets/.vscode/*
-01-server-sockets/!.vscode/settings.json
-01-server-sockets/!.vscode/tasks.json
-01-server-sockets/!.vscode/launch.json
-01-server-sockets/!.vscode/extensions.json
+apps/01-server-sockets/.vscode/*
+apps/01-server-sockets/!.vscode/settings.json
+apps/01-server-sockets/!.vscode/tasks.json
+apps/01-server-sockets/!.vscode/launch.json
+apps/01-server-sockets/!.vscode/extensions.json
+
 
 
 # CLIENT
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
-01-client-sockets/dist
-01-client-sockets/tmp
-01-client-sockets/out-tsc
-01-client-sockets/bazel-out
+apps/01-client-sockets/dist
+apps/01-client-sockets/tmp
+apps/01-client-sockets/out-tsc
+apps/01-client-sockets/bazel-out
 
 # Node
-01-client-sockets/node_modules
-01-client-sockets/npm-debug.log
-01-client-sockets/yarn-error.log
+apps/01-client-sockets/node_modules
+apps/01-client-sockets/npm-debug.log
+apps/01-client-sockets/yarn-error.log
 
 # IDEs and editors
-01-client-sockets/.idea/
-01-client-sockets/.project
-01-client-sockets/.classpath
-01-client-sockets/.c9/
-01-client-sockets/*.launch
-01-client-sockets/.settings/
-01-client-sockets/*.sublime-workspace
+apps/01-client-sockets/.idea/
+apps/01-client-sockets/.project
+apps/01-client-sockets/.classpath
+apps/01-client-sockets/.c9/
+apps/01-client-sockets/*.launch
+apps/01-client-sockets/.settings/
+apps/01-client-sockets/*.sublime-workspace
 
 # Visual Studio Code
-01-client-sockets/.vscode/*
-01-client-sockets/!.vscode/settings.json
-01-client-sockets/!.vscode/tasks.json
-01-client-sockets/!.vscode/launch.json
-01-client-sockets/!.vscode/extensions.json
-01-client-sockets/.history/*
+apps/01-client-sockets/.vscode/*
+apps/01-client-sockets/!.vscode/settings.json
+apps/01-client-sockets/!.vscode/tasks.json
+apps/01-client-sockets/!.vscode/launch.json
+apps/01-client-sockets/!.vscode/extensions.json
+apps/01-client-sockets/.history/*
 
 # Miscellaneous
-01-client-sockets/.angular/cache
-01-client-sockets/.sass-cache/
-01-client-sockets/connect.lock
-01-client-sockets/coverage
-01-client-sockets/libpeerconnection.log
-01-client-sockets/testem.log
-01-client-sockets/typings
+apps/01-client-sockets/.angular/cache
+apps/01-client-sockets/.sass-cache/
+apps/01-client-sockets/connect.lock
+apps/01-client-sockets/coverage
+apps/01-client-sockets/libpeerconnection.log
+apps/01-client-sockets/testem.log
+apps/01-client-sockets/typings
 
 # System files
-01-client-sockets/.DS_Store
-01-client-sockets/Thumbs.db
+apps/01-client-sockets/.DS_Store
+apps/01-client-sockets/Thumbs.db
