@@ -33,6 +33,21 @@ export class MessagesWsGateway
     this.wss.emit('active-users', this.users.getUserListNames());
   }
 
+  async emitPrivateMessage(id: string, message: NewMessageDto) {
+    this.wss.to(id).emit('private-message-from-server', { message });
+    console.log('private message sent');
+  }
+
+  async emitGeneralMessage(message: NewMessageDto) {
+    console.log('general message sent');
+    console.log(message);
+    this.wss.emit('message-from-server', message);
+  }
+
+  async emit(event: string, data: any) {
+    this.wss.emit(event, data);
+  }
+
   //listen to messages from client
   @SubscribeMessage('message')
   handleMessage(client: Socket, payload: NewMessageDto, cb?: any) {
@@ -76,20 +91,5 @@ export class MessagesWsGateway
   @SubscribeMessage('client-id')
   async emitId(client: Socket, payload: any, cb?: (response: any) => void) {
     return client.id;
-  }
-
-  async emitPrivateMessage(id: string, message: NewMessageDto) {
-    this.wss.to(id).emit('private-message-from-server', { message });
-    console.log('private message sent');
-  }
-
-  async emitGeneralMessage(message: NewMessageDto) {
-    console.log('general message sent');
-    console.log(message);
-    this.wss.emit('message-from-server', message);
-  }
-
-  test() {
-    console.log('test');
   }
 }

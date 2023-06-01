@@ -6,10 +6,18 @@ import { MessagesService } from './message/message.service';
 import { MessagesWsModule } from './messages-ws/messages-ws.module';
 import { UsersController } from './users/users.controller';
 import { UsersModule } from './users/users.module';
+import { GraphController } from './graph/graph.controller';
+import { GraphService } from './graph/graph.service';
+import { PollService } from './graph/poll.service';
 
 @Module({
   imports: [MessagesWsModule, UsersModule],
-  controllers: [AppController, MessagesController, UsersController],
-  providers: [AppService, MessagesService],
+  controllers: [
+    AppController,
+    MessagesController,
+    UsersController,
+    GraphController,
+  ],
+  providers: [AppService, MessagesService, GraphService, PollService],
 })
 export class AppModule {}

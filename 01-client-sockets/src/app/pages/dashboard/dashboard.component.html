@@ -1,0 +1,22 @@
+<h1>Dashboard dynamic graphs</h1>
+<hr />
+<!-- 
+<div class="row">
+  <div class="col-md-6">
+    <div style="display: block">
+      <canvas
+        baseChart
+        width="400"
+        height="400"
+        type="line"
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+      ></canvas>
+    </div>
+  </div>
+</div> -->
+
+<app-graph
+  [data]="lineChartData"
+  [labels]="lineChartLabels"
+></app-graph>
