@@ -1,0 +1,26 @@
+<div id="public">
+    <table *ngIf="lastTicketAssigned?.ticketNumber; else noTicketsAssigned">
+        <tr>
+            <td valign="middle" class="current-ticket">
+                <span id="lblTicket1" class="current-ticket-number">Ticket {{lastTicketAssigned?.ticketNumber}}</span>
+                <br>
+                <span id="lblDesktop1" class="current-ticket-desktop">Desktop {{lastTicketAssigned?.desktop}}</span>
+            </td>
+            <td>
+                <table>
+                    <tr *ngFor="let ticket of restTicketsAssigned" key="ticket.ticketNumber">
+                        <td>
+                            <span class="secondary-ticket">Ticket {{ticket.ticketNumber}}</span>
+                            <br>
+                            <span id="lblDesktop2">Desktop {{ticket.desktop}}</span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <ng-template #noTicketsAssigned>
+        <h1>No tickets have been assigned.</h1>
+    </ng-template>
+    
+</div>

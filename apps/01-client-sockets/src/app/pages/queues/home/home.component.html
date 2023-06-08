@@ -1,0 +1,17 @@
+<h1>Queue App</h1>
+<div class="row">
+    <div class="col-6">
+        <h4>Options</h4>
+        <ul class="list-group">
+            <a class="list-group-item list-group-item-action" routerLink="/queues/public">Public Desktop</a>
+            <a class="list-group-item list-group-item-action" routerLink="/queues/new-ticket">Create Ticket</a>
+        </ul>
+    </div>
+    <div class="col-6">
+        <h4>Desktop Setup</h4>
+        <div action="desktop.html"></div>
+        <input #txtDesktop (keyup.enter)="login( txtDesktop.value )" name="desktop" type="number" class="form-control" placeholder="Desktop Number" >
+        <br>
+        <button class="btn btn-primary w-100" type="button" (click)="login( txtDesktop.value )">Login</button>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{
+  "name": "angular-socket-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "start": "node apps/01-server-sockets/dist/main.js"
+  },
+  "repository": "https://github.com/gerodrig/angular-socket-app.git",
+  "author": "Gerardo Rodriguez <garc@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.10.1"
+  },
+  "dependencies": {}
+}

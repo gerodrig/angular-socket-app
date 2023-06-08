@@ -1,0 +1,13 @@
+<table>
+    <tr>
+        <td>
+            <h3>Last ticket Created</h3>
+            <span id="newTicket">{{lastTicketCreated?.ticketNumber }}</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button id="newTicketButton" class="btn btn-secondary btn-lg" (click)="createTicket()">Create New Ticket</button>
+        </td>
+    </tr>
+</table>

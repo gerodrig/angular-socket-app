@@ -1,0 +1,15 @@
+<div id="desktop">
+    <h1>Desktop {{ desktopNumber }}</h1>
+    <h4>Currently serving ticket: 
+        
+    <strong *ngIf="isDesktopAssigned; else elseBlock">{{ ticketAssigned?.ticketNumber }}</strong>
+    <ng-template #elseBlock>
+        <span>No ticket assigned</span>
+    </ng-template>
+    
+    
+    </h4>
+    <hr>
+    
+    <button class="btn btn-primary" (click)="assignNextTicket()">Next ticket</button>
+</div>
