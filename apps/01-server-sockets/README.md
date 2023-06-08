@@ -1,73 +1,45 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Server Sockets
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This project is a server-side implementation built with NestJS and utilizes websockets for real-time communication. This repository is managed as a monorepo with TurboPack for efficient dependency management and task execution.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Monorepo Setup with TurboPack
 
-## Description
+TurboPack is an excellent tool for managing monorepos by using efficient dependency graph evaluation to only perform necessary operations on the packages that need them. This greatly speeds up common tasks such as build, lint, and test, and is particularly well suited to large or complex monorepos.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+In this project, TurboPack has been used to set up the project in such a way that it is able to manage the dependencies and scripts for each individual package without duplicating any unnecessary work.
 
-## Installation
+## How to Run the Apps
 
-```bash
-$ yarn install
+Make sure you have Node.js and NPM installed in your system.
+
+Clone this repository:
+
+```dotnetcli
+git clone https://github.com/your-repository/server-sockets.git
 ```
 
-## Running the app
+Install the dependencies:
 
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
+```dotnetcli
+npm install
 ```
 
-## Test
+You can now run the application in a few different ways:
 
-```bash
-# unit tests
-$ yarn run test
+## Development
 
-# e2e tests
-$ yarn run test:e2e
+To start the server in development mode, use the following command:
 
-# test coverage
-$ yarn run test:cov
+```dotnetcli
+npm run dev
 ```
 
-## Support
+This command will start the server in watch mode, which means it will automatically restart whenever you make changes to the source code.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## Production
 
-## Stay in touch
+To start the server in production mode, use the following command:
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+```dotnetcli
+npm run start:prod
+```
